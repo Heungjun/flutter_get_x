@@ -28,6 +28,9 @@ class WithGetX extends StatelessWidget {
                   Text('${controller.count}', style: TextStyle(fontSize: 50))),
           _button('first'),
           _button('second'),
+          ElevatedButton(
+              onPressed: () => Get.find<CountControllerWithGetX>().putNumber(5),
+              child: Text('5로 변경', style: TextStyle(fontSize: 50))),
         ],
       ),
     );
