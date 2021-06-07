@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_x/src/pages/normal/first.dart';
+import 'package:get_x/src/pages/simple_state_manage/simple_state_manage_page.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -49,6 +50,12 @@ class Home extends StatelessWidget {
                   Get.toNamed('/user/09753?name=YHJ&age=30');
                 },
                 child: Text('동적 url')),
+            SizedBox(height: 10),
+            ElevatedButton(
+                onPressed: () {
+                  Get.to(SimpleStateManagePage());
+                },
+                child: Text('단순상태관리')),
           ],
         ),
       ),
