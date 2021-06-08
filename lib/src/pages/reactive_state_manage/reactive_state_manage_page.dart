@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_x/src/controller/count_controller_with_get_x.dart';
 import 'package:get_x/src/controller/count_controller_with_reactive.dart';
 
 class ReactiveStateManagePage extends StatelessWidget {
